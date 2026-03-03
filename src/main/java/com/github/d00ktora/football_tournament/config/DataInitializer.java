@@ -4,8 +4,10 @@ import com.github.d00ktora.football_tournament.repository.MatchRepository;
 import com.github.d00ktora.football_tournament.repository.PlayerRepository;
 import com.github.d00ktora.football_tournament.repository.RecordRepository;
 import com.github.d00ktora.football_tournament.repository.TeamRepository;
+import com.github.d00ktora.football_tournament.service.TournamentService;
 import com.github.d00ktora.football_tournament.service.csv.CsvManipulator;
 import com.github.d00ktora.football_tournament.config.enums.ImportType;
+import com.github.d00ktora.football_tournament.service.sweep.enums.Mode;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.io.ClassPathResource;
@@ -21,7 +23,6 @@ public class DataInitializer implements CommandLineRunner {
 	private final PlayerRepository playerRepository;
 	private final MatchRepository matchRepository;
 	private final RecordRepository recordRepository;
-
 	@Override
 	public void run(String... args) throws Exception {
 
