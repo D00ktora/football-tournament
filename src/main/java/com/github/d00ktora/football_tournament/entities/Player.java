@@ -21,11 +21,10 @@ public class Player {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private String teamNumber;
+	private Integer teamNumber;
 	private String position;
 	private String fullName;
-	private Long teamId;
 	@ManyToOne
-	@JoinColumn(name = "teamID")
+	@JoinColumn(name = "team_id")
 	private Team team;
 }
