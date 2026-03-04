@@ -43,19 +43,19 @@ public class CsvAnalyzer {
 		return new CsvData(analyzedData.getDelimiter(), parsedRows);
 	}
 
-	private static void checkIfRowIsComplete(String[] row, int expectedColumns, int i) {
+	private void checkIfRowIsComplete(String[] row, int expectedColumns, int i) {
 		if (row.length != expectedColumns) {
 			throw new RuntimeException("Invalid CSV format at line " + (i + 1) + ". Expected " + expectedColumns + " columns but found " + row.length);
 		}
 	}
 
-	private static void checkIfCsvIsEmpty(List<String> lines) {
+	private void checkIfCsvIsEmpty(List<String> lines) {
 		if (lines.isEmpty()) {
 			throw new RuntimeException("Empty CSV file");
 		}
 	}
 
-	private static String detectDelimiter(String headerLine) {
+	private String detectDelimiter(String headerLine) {
 
 		String[] possibleDelimiters = {",", ";", "\t", "|", ":"};
 		int maxCount = 0;
