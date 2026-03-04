@@ -1,4 +1,4 @@
-package com.github.d00ktora.football_tournament.service.sweep.dto;
+package com.github.d00ktora.football_tournament.entities.dto.sweep;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,8 +1,8 @@
 package com.github.d00ktora.football_tournament.controller;
 
 import com.github.d00ktora.football_tournament.entities.dto.TournamentResultDTO;
-import com.github.d00ktora.football_tournament.service.TournamentService;
-import com.github.d00ktora.football_tournament.service.sweep.enums.Mode;
+import com.github.d00ktora.football_tournament.service.tournament.TournamentService;
+import com.github.d00ktora.football_tournament.enums.Mode;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

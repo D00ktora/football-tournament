@@ -1,9 +1,9 @@
 package com.github.d00ktora.football_tournament.service.sweep;
 
-import com.github.d00ktora.football_tournament.service.sweep.dto.Event;
-import com.github.d00ktora.football_tournament.service.sweep.dto.MatchParticipation;
-import com.github.d00ktora.football_tournament.service.sweep.dto.PlayerPair;
-import com.github.d00ktora.football_tournament.service.sweep.enums.Mode;
+import com.github.d00ktora.football_tournament.entities.dto.sweep.Event;
+import com.github.d00ktora.football_tournament.entities.dto.sweep.MatchParticipation;
+import com.github.d00ktora.football_tournament.entities.dto.sweep.PlayerPair;
+import com.github.d00ktora.football_tournament.enums.Mode;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

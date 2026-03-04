@@ -1,7 +1,7 @@
 package com.github.d00ktora.football_tournament.service.csv;
 
-import com.github.d00ktora.football_tournament.service.csv.dto.AnalyzedData;
-import com.github.d00ktora.football_tournament.service.csv.dto.CsvData;
+import com.github.d00ktora.football_tournament.entities.dto.csv.AnalyzedData;
+import com.github.d00ktora.football_tournament.entities.dto.csv.CsvData;
 import org.springframework.stereotype.Component;
 
 import java.io.BufferedReader;

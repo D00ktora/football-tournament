@@ -1,13 +1,13 @@
-package com.github.d00ktora.football_tournament.service;
+package com.github.d00ktora.football_tournament.service.tournament;
 
 import com.github.d00ktora.football_tournament.entities.Record;
 import com.github.d00ktora.football_tournament.entities.dto.TournamentResultDTO;
 import com.github.d00ktora.football_tournament.repository.MatchRepository;
 import com.github.d00ktora.football_tournament.repository.RecordRepository;
-import com.github.d00ktora.football_tournament.service.sweep.enums.Mode;
+import com.github.d00ktora.football_tournament.enums.Mode;
 import com.github.d00ktora.football_tournament.service.sweep.SweepService;
-import com.github.d00ktora.football_tournament.service.sweep.dto.MatchParticipation;
-import com.github.d00ktora.football_tournament.service.sweep.dto.PlayerPair;
+import com.github.d00ktora.football_tournament.entities.dto.sweep.MatchParticipation;
+import com.github.d00ktora.football_tournament.entities.dto.sweep.PlayerPair;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

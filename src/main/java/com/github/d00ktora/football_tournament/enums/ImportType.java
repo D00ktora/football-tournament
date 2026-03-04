@@ -1,4 +1,4 @@
-package com.github.d00ktora.football_tournament.config.enums;
+package com.github.d00ktora.football_tournament.enums;
 
 public enum ImportType {
 	TEAMS,
