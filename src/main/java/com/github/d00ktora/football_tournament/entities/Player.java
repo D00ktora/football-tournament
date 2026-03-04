@@ -21,9 +21,9 @@ public class Player {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	private String fullName;
 	private Integer teamNumber;
 	private String position;
-	private String fullName;
 	@ManyToOne
 	@JoinColumn(name = "team_id")
 	private Team team;
