@@ -2,7 +2,7 @@ package com.github.d00ktora.football_tournament.service.player;
 
 import com.github.d00ktora.football_tournament.entities.Player;
 import com.github.d00ktora.football_tournament.entities.Team;
-import com.github.d00ktora.football_tournament.entities.dto.PlayerDTO;
+import com.github.d00ktora.football_tournament.entities.dto.player.PlayerDTO;
 import com.github.d00ktora.football_tournament.repository.PlayerRepository;
 import com.github.d00ktora.football_tournament.service.team.TeamService;
 import lombok.RequiredArgsConstructor;
@@ -43,12 +43,17 @@ public class PlayerService {
 		throw new BadRequestException("Player do not exist.");
 	}
 
-	public PlayerDTO getPlayerById(Long id) throws BadRequestException {
+	public PlayerDTO getPlayerDtoById(Long id) throws BadRequestException {
 		Optional<Player> playerFromRepo = playerRepository.findById(id);
 		if (playerFromRepo.isPresent()) {
 			return createPlayerDtoFromPlayer(playerFromRepo.get());
 		}
 		throw new BadRequestException("Player is not exist.");
+	}
+
+	public Player getPlayerById(Long id) {
+		Optional<Player> playerFromRepo = playerRepository.findById(id);
+		return playerFromRepo.orElse(null);
 	}
 
 	private void checkIfItsPlayerDataValid(PlayerDTO player) throws BadRequestException {

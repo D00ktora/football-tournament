@@ -1,4 +1,4 @@
-package com.github.d00ktora.football_tournament.entities.dto;
+package com.github.d00ktora.football_tournament.entities.dto.tournament;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

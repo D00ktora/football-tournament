@@ -1,6 +1,6 @@
 package com.github.d00ktora.football_tournament.controller;
 
-import com.github.d00ktora.football_tournament.entities.dto.PlayerDTO;
+import com.github.d00ktora.football_tournament.entities.dto.player.PlayerDTO;
 import com.github.d00ktora.football_tournament.service.player.PlayerService;
 import lombok.RequiredArgsConstructor;
 import org.apache.coyote.BadRequestException;
@@ -25,7 +25,7 @@ public class PlayerController {
 
 	@GetMapping("{id}")
 	public ResponseEntity<PlayerDTO> getPlayer(@PathVariable Long id) throws BadRequestException {
-		return ResponseEntity.ok(playerService.getPlayerById(id));
+		return ResponseEntity.ok(playerService.getPlayerDtoById(id));
 	}
 
 	@PostMapping("update")

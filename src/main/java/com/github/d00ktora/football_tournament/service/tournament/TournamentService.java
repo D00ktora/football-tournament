@@ -1,7 +1,7 @@
 package com.github.d00ktora.football_tournament.service.tournament;
 
 import com.github.d00ktora.football_tournament.entities.Record;
-import com.github.d00ktora.football_tournament.entities.dto.TournamentResultDTO;
+import com.github.d00ktora.football_tournament.entities.dto.tournament.TournamentResultDTO;
 import com.github.d00ktora.football_tournament.repository.MatchRepository;
 import com.github.d00ktora.football_tournament.repository.RecordRepository;
 import com.github.d00ktora.football_tournament.enums.Mode;
