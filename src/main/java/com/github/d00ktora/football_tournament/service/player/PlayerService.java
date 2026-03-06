@@ -56,6 +56,10 @@ public class PlayerService {
 		return playerFromRepo.orElse(null);
 	}
 
+	public Player getPlayerByTeamId(Long teamId) {
+		return playerRepository.findByTeamId(teamId);
+	}
+
 	private void checkIfItsPlayerDataValid(PlayerDTO player) throws BadRequestException {
 		if (isPlayerAlreadyExist(player.getFullName())) {
 			throw new BadRequestException("Player Already Exist");
@@ -76,7 +80,7 @@ public class PlayerService {
 	}
 
 	private boolean isTeamExist(Long teamId) {
-		return teamService.checkIfTeamExists(teamId);
+		return teamService.checkIfTeamExistsById(teamId);
 	}
 
 	private boolean isPlayerNumberValid(Long number, Long teamId) {

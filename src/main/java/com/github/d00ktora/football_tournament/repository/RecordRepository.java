@@ -1,6 +1,7 @@
 package com.github.d00ktora.football_tournament.repository;
 
 import com.github.d00ktora.football_tournament.entities.Record;
+import com.github.d00ktora.football_tournament.entities.Team;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
